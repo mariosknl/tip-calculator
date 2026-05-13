@@ -5,19 +5,39 @@ struct PaymentSummaryView: View {
     let split: Int
     let bill: Double
     
-    // TODO: Calculate based on inputs
-    var totalPerPerson: String {
-        "300"
+    var tip: Double {
+        bill * Double(tipPercentage) / 100.0
     }
-    var billPerPerson: String {
-        "250"
+    var total: Double {
+        bill + tip
     }
-    var tipPerPerson: String {
-        "50"
+    // TODO: Localize...
+    func formattedAmount(value: Double, split: Int) -> String {
+        let newValue = value / Double(split)
+        return "$\(newValue.formatted())"
     }
     
-    // TODO: Add iPad support (.largeTitle)
-    var font: Font = .headline
+    var totalPerPerson: String {
+        formattedAmount(value: total, split: split)
+    }
+    var billPerPerson: String {
+        formattedAmount(value: bill, split: split)
+    }
+    var tipPerPerson: String {
+        formattedAmount(value: tip, split: split)
+    }
+    
+    // iPad Support
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    
+    var isIPad: Bool {
+        horizontalSizeClass == .regular && verticalSizeClass == .regular
+    }
+    
+    var font: Font  {
+        isIPad ? .largeTitle : .headline
+    }
     
     var body: some View {
         GroupBox {
@@ -56,7 +76,6 @@ struct PaymentSummaryView: View {
         }
         .backgroundStyle(.myLightGreen.opacity(0.8))
         .clipShape(.rect(cornerRadius: 20))
-
     }
 }
 
@@ -66,9 +85,9 @@ struct PaymentSummaryView: View {
             .fill(.blue.opacity(0.3))
         
         PaymentSummaryView(
-            tipPercentage: 20,
-            split: 2,
-            bill: 500
+            tipPercentage: 10,
+            split: 5,
+            bill: 100
         )
     }.padding()
 }
