@@ -1,0 +1,127 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Amount" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνολο"
+          }
+        }
+      }
+    },
+    "Bill" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λογαριασμος"
+          }
+        }
+      }
+    },
+    "Choose Tip" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάλεξε Φιλοδωρημα"
+          }
+        }
+      }
+    },
+    "Choose Tip View" : {
+
+    },
+    "Custom" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Custom"
+          }
+        }
+      }
+    },
+    "Enter Total" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εισαγωγή Συνολου"
+          }
+        }
+      }
+    },
+    "Enter Total View" : {
+
+    },
+    "Payment Summary" : {
+
+    },
+    "Split" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαχωρισμος"
+          }
+        }
+      }
+    },
+    "Split View" : {
+
+    },
+    "Summary" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περιληψη"
+          }
+        }
+      }
+    },
+    "Tip" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φιλοδωρημα"
+          }
+        }
+      }
+    },
+    "Tip Calculator" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aριθμομηχανή φιλοδωρηματος"
+          }
+        }
+      }
+    },
+    "Tip Calculator View (landscape)" : {
+
+    },
+    "Tip Calculator View (portrait)" : {
+
+    },
+    "Title View" : {
+
+    },
+    "Total per person" : {
+      "localizations" : {
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σύνολο ανά ατομο"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.2"
+}
