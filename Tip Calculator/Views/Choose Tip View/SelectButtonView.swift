@@ -43,7 +43,7 @@ struct SelectButtonView: View {
             color1: .myDarkGreen,
             color2: .myWhite,
             selectedTip: .constant(5),
-            tipPercentage: .constant(20)
+            tipPercentage: .constant(TipPercentage.ten.rawValue)
         )
     }
 }
