@@ -23,9 +23,9 @@ struct MainView: View {
     var body: some View {
         VStack {
             if isPortaitPhone {
-                Text("Tip Calculator View (portrait)")
+                TipCalculatorView()
             } else {
-                Text("Tip Calculator View (landscape)")
+                LandscapeTipCalculatorView()
             }
         }
         .padding()
