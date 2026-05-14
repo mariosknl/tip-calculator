@@ -3,9 +3,9 @@ import Foundation
 struct TipModel: Identifiable {
     let id = UUID()
     
-    let tipPercentage: Int
-    let split: Int
-    let bill: Double
+    var tipPercentage: Int
+    var split: Int
+    var bill: Double
     
     var tip: Double {
         bill * Double(tipPercentage) / 100.0
