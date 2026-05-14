@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
     "Amount" : {
       "localizations" : {
         "el" : {
@@ -31,9 +34,6 @@
         }
       }
     },
-    "Choose Tip View" : {
-
-    },
     "Custom" : {
       "localizations" : {
         "el" : {
@@ -54,12 +54,6 @@
         }
       }
     },
-    "Enter Total View" : {
-
-    },
-    "Payment Summary" : {
-
-    },
     "Split" : {
       "localizations" : {
         "el" : {
@@ -69,9 +63,6 @@
           }
         }
       }
-    },
-    "Split View" : {
-
     },
     "Summary" : {
       "localizations" : {
@@ -107,9 +98,6 @@
 
     },
     "Tip Calculator View (portrait)" : {
-
-    },
-    "Title View" : {
 
     },
     "Total per person" : {
